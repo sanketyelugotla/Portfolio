@@ -114,6 +114,7 @@ input[type="radio"] {
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    /* background-color: #02030a; */
 }
 
 .cube-face {

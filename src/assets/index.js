@@ -41,8 +41,14 @@ import tripguide from "./tripguide.png";
 
 import digiBallot from "./dibiBallot.png";
 import skyHeights from "./skyHeights.png";
+import sklm from "./sklm.jpg"
+import lpu from "./lpu.png"
+import chaitanya from "./chaitanya.png"
 
 export {
+  sklm,
+  chaitanya,
+  lpu,
   live,
   ds,
   digiBallot,

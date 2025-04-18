@@ -8,9 +8,12 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
-
+import Education from './Education';
+import Trainings from './Trainings';
+import Certifications from './Certifications';
 
 export {
+  Education,
   Hero,
   Navbar,
   About,
@@ -23,5 +26,7 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  Certifications,
+  Trainings
 };
