@@ -108,4 +108,4 @@ const Trainings = () => {
     )
 }
 
-export default SectionWrapper(Trainings, "")
+export default SectionWrapper(Trainings, "trainings")

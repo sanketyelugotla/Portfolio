@@ -39,6 +39,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import sanket from "./sanket.jpg"
+// import sanket from "./sanketf.jpg"
 
 import digiBallot from "./dibiBallot.png";
 import skyHeights from "./skyHeights.png";
