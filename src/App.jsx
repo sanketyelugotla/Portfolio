@@ -19,8 +19,10 @@ const App = () => {
 
         {/* Six faces */}
         <CubeViewer />
-
         <div style={{ marginTop: "100px" }} />
+
+        {/* Projects */}
+        <Works />
 
         {/* Experience in future */}
         {/* <Experience /> */}
@@ -31,8 +33,6 @@ const App = () => {
         {/* Skills */}
         <Tech />
 
-        {/* Projects */}
-        <Works />
 
         {/* Training */}
         <Trainings />

@@ -45,7 +45,19 @@ import sklm from "./sklm.jpg"
 import lpu from "./lpu.png"
 import chaitanya from "./chaitanya.png"
 
+import mernTraining from "./mernTraining.png"
+import dsaTraining from "./dsaTraining.png"
+
+import scrimba from "./scrimba.png"
+import devops from "./devops.png"
+import ethical from "./ethical.png"
+
 export {
+  dsaTraining,
+  scrimba,
+  devops,
+  ethical,
+  mernTraining,
   sklm,
   chaitanya,
   lpu,

@@ -42,7 +42,7 @@ const ProjectCard = ({
               <img
                 src={live}
                 alt='source code'
-                className='w-1/2 h-1/2 object-contain'
+                className='w-1/2 h-1/2 object-contain rounded-full'
               />
             </div>
             <div
@@ -60,7 +60,7 @@ const ProjectCard = ({
 
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <h3 className='text-white font-bold text-[24px] font-Volkhov'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
