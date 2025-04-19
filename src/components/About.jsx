@@ -47,7 +47,7 @@ const About = () => {
 
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
-				className='mt-4 text-secondary text-[19px] max-w-4xl leading-[30px] mb-5'
+				className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] mb-5 tracking-wide '
 			>
 				I'm a passionate software developer with hands-on experience in Java, C++, Python, and JavaScript. I specialize in building full-stack applications using React and Node.js, and work with modern databases like MongoDB and Supabase. With a strong foundation in Android development and data structures & algorithms, I focus on creating scalable, efficient, and user-focused solutions. I'm a fast learner who loves collaborating to turn innovative ideas into impactful real-world applications. Let’s bring your vision to life!
 			</motion.p>

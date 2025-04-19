@@ -8,7 +8,7 @@ const education = [
     {
         title: "Bachelor of Technology - Computer Science",
         company_name: "Lovely Professional University",
-        icon: sklm,
+        icon: lpu,
         iconBg: "#E6DEDD",
         date: "October 2022 - Present",
         points: [
@@ -21,7 +21,7 @@ const education = [
     {
         title: "Pre University Course (MPC)",
         company_name: "Rajiv Gandhi University",
-        icon: lpu,
+        icon: sklm,
         iconBg: "#383E56",
         date: "January 2021 - October 2022",
         points: [

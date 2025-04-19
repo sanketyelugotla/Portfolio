@@ -76,6 +76,7 @@
 }
 
 .controls {
+    font-family: Montserrat;
     margin-bottom: 100px;
     display: flex;
     gap: 12px;

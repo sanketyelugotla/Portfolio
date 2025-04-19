@@ -11,12 +11,12 @@ const CubeViewer = () => {
         <>
             <motion.div variants={textVariant()} className="-mt-12 mb-10">
                 <p className={`${styles.sectionSubText} `}>The Six Sides of Me</p>
-                <h2 className={`${styles.sectionHeadText}`}>Each face tells a story.</h2>
+                <h2 className={`${styles.sectionHeadText} sm`}>Each face tells a story.</h2>
             </motion.div>
             <div className="viewer-wrapper">
                 <div class="background-glow"></div>
 
-                <div class="viewer">
+                <div className="viewer">
                     <input type="radio" name="view" id="front" />
                     <input type="radio" name="view" id="back" />
                     <input type="radio" name="view" id="left" />
@@ -24,7 +24,7 @@ const CubeViewer = () => {
                     <input type="radio" name="view" id="top" />
                     <input type="radio" name="view" id="bottom" />
 
-                    <div class="controls">
+                    <div className="controls">
                         <label for="front">💻 Developer</label>
                         <label for="back">🎨 Designer</label>
                         <label for="right">📚 Learner</label>
@@ -34,7 +34,7 @@ const CubeViewer = () => {
                     </div>
 
                     <div class="scene">
-                        <div class="cube-face front" data-tooltip="Main Product View">
+                        <div className="cube-face front" data-tooltip="Main Product View">
                             💻Developer
                             <span>"I build modern web apps"</span>
                         </div>
@@ -44,28 +44,28 @@ const CubeViewer = () => {
                             <span>"I love clean & intuitive UI"</span>
                         </div>
 
-                        <div class="cube-face right" data-tooltip="Side Components">
+                        <div className="cube-face right" data-tooltip="Side Components">
                             📚 Learner
                             <span>"Always leveling up"</span>
                         </div>
 
-                        <div class="cube-face left" data-tooltip="Feature Highlights">
+                        <div className="cube-face left" data-tooltip="Feature Highlights">
                             🧠 Thinker
                             <span> "Collaboration is key"</span>
                         </div>
 
-                        <div class="cube-face top" data-tooltip="Top Overview">
+                        <div className="cube-face top" data-tooltip="Top Overview">
                             🧑‍🤝‍🧑 Team Player
                             <span>"Problem-solving mindset"</span>
                         </div>
 
-                        <div class="cube-face bottom" data-tooltip="Base Details">
+                        <div className="cube-face bottom" data-tooltip="Base Details">
                             🚀 Creator
                             <span>"Turning ideas into code"</span>
                         </div>
                     </div>
 
-                    <div class="dot-indicators">
+                    <div className="dot-indicators">
                         <label for="front"></label>
                         <label for="back"></label>
                         <label for="left"></label>
