@@ -4,6 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Nico Moji';
+  src: url('./assets/fonts/NicoMoji-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./assets/fonts/Orbitron.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Volkhov';
+  src: url('./assets/fonts/Volkhov-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Volkhov-Bold';
+  src: url('./assets/fonts/Volkhov-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;

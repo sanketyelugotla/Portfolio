@@ -49,11 +49,7 @@ const About = () => {
 				variants={fadeIn("", "", 0.1, 1)}
 				className='mt-4 text-secondary text-[19px] max-w-4xl leading-[30px] mb-5'
 			>
-				I'm a skilled software developer with experience in Java, C++, Python, and JavaScript,
-				along with expertise in frameworks like React and Node.js, and databases such as MongoDB
-				and Supabase. I'm a quick learner who collaborates closely with clients to build efficient,
-				scalable, and user-friendly solutions that solve real-world problems.
-				Let's work together to bring your ideas to life!
+				I'm a passionate software developer with hands-on experience in Java, C++, Python, and JavaScript. I specialize in building full-stack applications using React and Node.js, and work with modern databases like MongoDB and Supabase. With a strong foundation in Android development and data structures & algorithms, I focus on creating scalable, efficient, and user-focused solutions. I'm a fast learner who loves collaborating to turn innovative ideas into impactful real-world applications. Let’s bring your vision to life!
 			</motion.p>
 
 			{/* <div className='mt-20 flex flex-wrap gap-10'>

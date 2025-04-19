@@ -17,23 +17,24 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Sanket</span>
+          <h1 className={`${styles.heroHeadText} text-white font-Volkhov`}>
+            Hi, I'm <span className='text-[#915EFF] font-Orbitron'>Sanket</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            <Typewriter
-              options={{
-                strings: ['Full Stack Developer', 'React Native Developer', 'Data Scientist'],
-                autoStart: true,
-                loop: true,
-              }}
-            />
+            <div className="font-Montserrat">
+              <Typewriter
+                options={{
+                  strings: ['Full Stack Developer', 'React Native Developer', 'Data Scientist'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
             Clean code. Scalable systems. Sharp logic.
           </p>
         </div>
       </div>
-
-      {/* <ComputersCanvas /> */}
+      {/* <CxomputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

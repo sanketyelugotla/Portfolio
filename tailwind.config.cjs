@@ -12,6 +12,13 @@ module.exports = {
         "black-200": "#090325",
         "white-100": "#f3f3f3",
       },
+      fontFamily: {
+        'nico': ['Nico Moji', 'sans-serif'],
+        'Orbitron': ['Orbitron', 'sans-serif'],
+        'Volkhov': ['Volkhov', 'sans-serif'],
+        'Volkhov-Bold': ['Volkhov-Bold', 'sans-serif'],
+        'Montserrat': ['Montserrat', 'sans-serif'],
+      },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },

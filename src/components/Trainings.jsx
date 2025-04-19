@@ -1,7 +1,10 @@
 import React from 'react'
+import { SectionWrapper } from "../hoc";
 
-export default function Trainings() {
-  return (
-    <div>Trainings</div>
-  )
+const Trainings = () => {
+    return (
+        <div>Trainings</div>
+    )
 }
+
+export default SectionWrapper(Trainings, "")
