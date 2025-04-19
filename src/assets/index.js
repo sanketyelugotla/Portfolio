@@ -38,6 +38,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import sanket from "./sanket.jpg"
 
 import digiBallot from "./dibiBallot.png";
 import skyHeights from "./skyHeights.png";
@@ -53,6 +54,7 @@ import devops from "./devops.png"
 import ethical from "./ethical.png"
 
 export {
+  sanket,
   dsaTraining,
   scrimba,
   devops,
