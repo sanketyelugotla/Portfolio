@@ -41,7 +41,7 @@ const App = () => {
         <Certifications />
 
         {/* Testimonals */}
-        <Feedbacks />
+        {/* <Feedbacks /> */}
 
         <div className='relative z-0'>
           {/* Contact form */}
