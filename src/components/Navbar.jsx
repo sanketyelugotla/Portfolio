@@ -32,7 +32,7 @@ const Navbar = () => {
 		<nav
 			className={`
 				${styles.paddingX} 
-				w-full flex items-center py-7 tracking-wide fixed top-0 z-20 
+				w-full flex items-center py-2 tracking-wide fixed top-0 z-20 
 				${scrolled ? "bg-primary stickyy" : "bg-transparent"}
 			`}
 		>
@@ -46,7 +46,7 @@ const Navbar = () => {
 					}}
 				>
 					{/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
-					<p className="text-[#915EFF] text-[55px] font-bold cursor-pointer flex font-culpa tracking-wider fixed top-1">
+					<p className="text-[#915EFF] text-[50px] font-bold cursor-pointer flex font-culpa tracking-wider">
 						Sanket Yelugotla &nbsp;
 						{/* <span className='sm:block hidden font-nico'> | Full Stack Developer</span> */}
 					</p>
@@ -58,9 +58,13 @@ const Navbar = () => {
 							key={nav.id}
 							className={`${active === nav.title ? "text-white" : "text-secondary"
 								} hover:text-white text-[18px] font-medium cursor-pointer`}
-							onClick={() => setActive(nav.title)}
+							onClick={
+								() => {
+									setActive(nav.title)
+									navigte("/")
+								}}
 						>
-							<a href={`/#${nav.id}`}>{nav.title}</a>
+							<a href={`#${nav.id}`}>{nav.title}</a>
 						</li>
 					))}
 					<li>
@@ -105,7 +109,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-		</nav>
+		</nav >
 	);
 };
 
