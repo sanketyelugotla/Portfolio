@@ -1,99 +1,49 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Document, Page, pdfjs } from 'react-pdf';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import React, { useState, useEffect } from "react";
+import { Container, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Particle from "./canvas/Particle";
+import pdf from "./resume.pdf";
+import { AiOutlineDownload } from "react-icons/ai";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { SectionWrapper } from "../hoc";
 
-// Configure PDF worker
+// ✅ Set up the PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const Resume = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [numPages, setNumPages] = useState(null);
-    const resumeFile = "/resume.pdf"; // in public folder
+function Resume() {
+    const [width, setWidth] = useState(window.innerWidth);
 
-    const onDocumentLoadSuccess = ({ numPages }) => {
-        setNumPages(numPages);
-    };
-
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = resumeFile;
-        link.download = "Sanket_Resume.pdf";
-        link.click();
-    };
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     return (
-        <>
-            {/* Preview Button */}
-            <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setIsOpen(true)}
-                className="bg-[#915EFF] text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-purple-500/30 transition-all"
-            >
-                View Resume
-            </motion.button>
+        <div>
+            <Container fluid className="resume-section">
+                <Particle />
+                <Row style={{ justifyContent: "center", position: "relative" }}>
+                    <Button variant="primary" href={pdf} target="_blank" style={{ maxWidth: "250px" }}>
+                        <AiOutlineDownload /> &nbsp;Download CV
+                    </Button>
+                </Row>
 
-            {/* Modal */}
-            <AnimatePresence>
-                {isOpen && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4"
-                        onClick={() => setIsOpen(false)}
-                    >
-                        <motion.div
-                            initial={{ y: 50, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            exit={{ y: 50, opacity: 0 }}
-                            className="bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto"
-                            onClick={(e) => e.stopPropagation()}
-                        >
-                            <div className="p-4 flex justify-between items-center border-b border-gray-800">
-                                <h3 className="text-xl font-bold text-white">My Resume</h3>
-                                <button
-                                    onClick={() => setIsOpen(false)}
-                                    className="text-gray-400 hover:text-white"
-                                >
-                                    ✕
-                                </button>
-                            </div>
+                <Row className="resume">
+                    <Document file={pdf} className="d-flex justify-content-center">
+                        <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+                    </Document>
+                </Row>
 
-                            <div className="p-4">
-                                <Document
-                                    file={resumeFile}
-                                    onLoadSuccess={onDocumentLoadSuccess}
-                                    loading={<div className="text-white">Loading...</div>}
-                                    error={<div className="text-red-500">Failed to load PDF</div>}
-                                >
-                                    {Array.from(new Array(numPages), (_, index) => (
-                                        <Page
-                                            key={`page_${index + 1}`}
-                                            pageNumber={index + 1}
-                                            width={800}
-                                            renderTextLayer={false}
-                                            className="border border-gray-800 mb-4"
-                                        />
-                                    ))}
-                                </Document>
-                            </div>
-
-                            <div className="p-4 border-t border-gray-800 flex justify-end">
-                                <button
-                                    onClick={handleDownload}
-                                    className="bg-[#915EFF] hover:bg-[#7d4de0] text-white px-4 py-2 rounded transition-colors"
-                                >
-                                    Download PDF
-                                </button>
-                            </div>
-                        </motion.div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
-        </>
+                <Row style={{ justifyContent: "center", position: "relative" }}>
+                    <Button variant="primary" href={pdf} target="_blank" style={{ maxWidth: "250px" }}>
+                        <AiOutlineDownload /> &nbsp;Download CV
+                    </Button>
+                </Row>
+            </Container>
+        </div>
     );
-};
+}
 
-export default Resume;
+export default SectionWrapper(Resume, "");

@@ -12,9 +12,11 @@ import Education from './Education';
 import Trainings from './Trainings';
 import Certifications from './Certifications';
 import Resume from './Resume';
+import CubeViewer from './CubeViewer';
 
 export {
   Education,
+  CubeViewer,
   Hero,
   Resume,
   Navbar,
