@@ -87,7 +87,7 @@ const Trainings = () => {
         <>
             <motion.div variants={textVariant()}>
                 <p className={`${styles.sectionSubText}`}>Skills in Action</p>
-                <h2 className={`${styles.sectionHeadText}`}>Technical Trainings.</h2>
+                <h2 className={`${styles.sectionHeadText}`}> <span className='text-[#915EFF]'>Technical</span> Trainings.</h2>
             </motion.div>
 
             <div className='w-full flex'>
@@ -95,7 +95,17 @@ const Trainings = () => {
                     variants={fadeIn("", "", 0.1, 1)}
                     className='mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]'
                 >
-                    The trainings listed below highlight my commitment to continuous learning and staying up-to-date with the latest technologies. These programs helped strengthen my foundation in core concepts, sharpen my problem-solving skills, and gain practical experience with real-world tools and frameworks used in modern software development.
+                    The trainings listed below highlight my commitment to{" "}
+                    <span className='text-[#915EFF]'>continuous learning</span> and staying{" "}
+                    <span className='text-[#915EFF]'>up-to-date</span> with the latest{" "}
+                    <span className='text-[#915EFF]'>technologies</span>. <br /> These programs helped
+                    strengthen my foundation in{" "}
+                    <span className='text-[#915EFF]'>core concepts</span>, sharpen my{" "}
+                    <span className='text-[#915EFF]'>problem-solving skills</span>, and gain{" "}
+                    <span className='text-[#915EFF]'>practical experience</span> with{" "}
+                    <span className='text-[#915EFF]'>real-world tools</span> and{" "}
+                    <span className='text-[#915EFF]'>frameworks</span> used in modern software
+                    development.
                 </motion.p>
             </div>
 

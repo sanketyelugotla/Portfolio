@@ -40,10 +40,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[25px] font-bold cursor-pointer flex font-nico'>
-            Sanket Yelugotla&nbsp;
-            <span className='sm:block hidden font-nico'> | Full Stack Developer</span>
+          {/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
+          <p className='text-[#915EFF] text-[55px] font-bold cursor-pointer flex font-culpa tracking-wider fixed top-1'>
+            Sanket Yelugotla &nbsp;
+            {/* <span className='sm:block hidden font-nico'> | Full Stack Developer</span> */}
           </p>
         </Link>
 

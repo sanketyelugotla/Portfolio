@@ -90,15 +90,19 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]'
+          className='mt-3 text-secondary text-[17px] max-w-4xl leading-[30px] tracking-wide'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Following <span className="text-[#915EFF]">projects</span> showcase my
+          <span className="text-[#915EFF]"> skills</span> and
+          <span className="text-[#915EFF]"> experience</span> through real-world examples of my work. <br /> Each project is briefly described with links to
+          <span className="text-[#915EFF]"> code repositories</span> and
+          <span className="text-[#915EFF]"> live demos</span> in it. <br /> It reflects my ability to
+          <span className="text-[#915EFF]"> solve complex problems</span>, work with
+          <span className="text-[#915EFF]"> different technologies</span>, and
+          <span className="text-[#915EFF]"> manage projects effectively</span>.
         </motion.p>
       </div>
+
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (

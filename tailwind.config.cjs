@@ -18,6 +18,8 @@ module.exports = {
         'Volkhov': ['Volkhov', 'sans-serif'],
         'Volkhov-Bold': ['Volkhov-Bold', 'sans-serif'],
         'Montserrat': ['Montserrat', 'sans-serif'],
+        'saint': ['Mrs Saint Delafield', 'cursive'],
+        'culpa': ['Mea Culpa', 'cursive'],
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

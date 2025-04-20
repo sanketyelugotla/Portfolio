@@ -11,10 +11,12 @@ import CanvasLoader from "./Loader";
 import Education from './Education';
 import Trainings from './Trainings';
 import Certifications from './Certifications';
+import Resume from './Resume';
 
 export {
   Education,
   Hero,
+  Resume,
   Navbar,
   About,
   Tech,
@@ -23,9 +25,9 @@ export {
   Feedbacks,
   Contact,
   CanvasLoader,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
   StarsCanvas,
   Certifications,
   Trainings

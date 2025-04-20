@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Education, Trainings, Certifications } from "./components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Education, Trainings, Certifications, Resume } from "./components";
 import CubeViewer from "./components/CubeViewer";
 
 const App = () => {
@@ -39,6 +39,8 @@ const App = () => {
 
         {/* Certifications */}
         <Certifications />
+
+        <Resume />
 
         {/* Testimonals */}
         {/* <Feedbacks /> */}

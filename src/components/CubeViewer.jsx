@@ -11,7 +11,7 @@ const CubeViewer = () => {
         <>
             <motion.div variants={textVariant()} className="-mt-12 mb-10">
                 <p className={`${styles.sectionSubText} `}>The Six Sides of Me</p>
-                <h2 className={`${styles.sectionHeadText} sm`}>Each face tells a story.</h2>
+                <h2 className={`${styles.sectionHeadText} sm`}>Each <span className='text-[#915EFF]'>Face</span> tells a story.</h2>
             </motion.div>
             <div className="viewer-wrapper">
                 <div class="background-glow"></div>

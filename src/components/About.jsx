@@ -45,10 +45,29 @@ const About = () => {
 
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
-				className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] mb-5 tracking-wide '
+				className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] mb-5 tracking-widest'
 			>
-				I'm a passionate software developer with hands-on experience in Java, C++, Python, and JavaScript. I specialize in building full-stack applications using React and Node.js, and work with modern databases like MongoDB and Supabase. With a strong foundation in Android development and data structures & algorithms, I focus on creating scalable, efficient, and user-focused solutions. I'm a fast learner who loves collaborating to turn innovative ideas into impactful real-world applications. Let’s bring your vision to life!
+				I'm a passionate <span className="text-[#915EFF]">software developer</span> with hands-on experience in
+				<span className="text-[#915EFF]"> Java</span>,
+				<span className="text-[#915EFF]"> C++</span>,
+				<span className="text-[#915EFF]"> Python</span>, and
+				<span className="text-[#915EFF]"> JavaScript</span>. <br /> I specialize in building
+				<span className="text-[#915EFF]"> full-stack applications</span> using
+				<span className="text-[#915EFF]"> React</span> and
+				<span className="text-[#915EFF]"> Node.js</span>, and work with modern databases like
+				<span className="text-[#915EFF]"> MongoDB</span> and
+				<span className="text-[#915EFF]"> Supabase</span>. <br /> With a strong foundation in
+				<span className="text-[#915EFF]"> Android development</span> and
+				<span className="text-[#915EFF]"> data structures & algorithms</span>, I focus on creating
+				<span className="text-[#915EFF]"> scalable</span>,
+				<span className="text-[#915EFF]"> efficient</span>, and
+				<span className="text-[#915EFF]"> user-focused</span> solutions. <br /> I'm a
+				<span className="text-[#915EFF]"> fast learner</span> who loves collaborating to turn
+				<span className="text-[#915EFF]"> innovative ideas</span> into
+				<span className="text-[#915EFF]"> impactful real-world applications</span>. <br /> Let’s bring your
+				<span className="text-[#915EFF]"> vision</span> to life!
 			</motion.p>
+
 
 			{/* <div className='mt-20 flex flex-wrap gap-10'>
 				{services.map((service, index) => (
