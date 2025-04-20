@@ -46,7 +46,7 @@ const Navbar = () => {
 					}}
 				>
 					{/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
-					<p className="text-[#915EFF] text-[50px] font-bold cursor-pointer flex font-culpa tracking-wider">
+					<p className="text-[#915EFF] text-[3rem] font-bold cursor-pointer flex font-culpa tracking-wider">
 						Sanket Yelugotla &nbsp;
 						{/* <span className='sm:block hidden font-nico'> | Full Stack Developer</span> */}
 					</p>
