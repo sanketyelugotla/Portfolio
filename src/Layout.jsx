@@ -1,4 +1,4 @@
-import { About, Certifications, Contact, Education, Hero, StarsCanvas, Tech, Trainings, Works, CubeViewer } from "./components";
+import { About, Certifications, Contact, Education, Hero, StarsCanvas, Tech, Trainings, Works, CubeViewer, Social, Github } from "./components";
 
 
 const Layout = () => {
@@ -40,6 +40,8 @@ const Layout = () => {
             {/* Testimonals */}
             {/* <Feedbacks /> */}
 
+            <Github />
+
             <div className='relative z-0'>
                 {/* Contact form */}
                 <Contact />
@@ -47,6 +49,9 @@ const Layout = () => {
                 {/* Background stars */}
                 <StarsCanvas />
             </div>
+
+            {/* Social media links */}
+            {/* <Social /> */}
         </>
 
     );
