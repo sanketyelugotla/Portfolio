@@ -5,16 +5,16 @@ import { sanket } from "../assets";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto overflow-hidden">
-      <div className={`absolute inset-0 top-[20vh] md:top-[34vh] max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-10`}>
+    <section className="relative w-full h-screen mx-auto flex items-center justify-center overflow-hidden">
+      <div className={`w-full max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10`}>
         {/* Left Vertical Line - Hidden on mobile */}
-        <div className='hidden md:flex flex-col justify-center items-center mt-5'>
+        <div className='hidden md:flex flex-col justify-center items-center'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          <div className='w-1 h-40 sm:h-80 violet-gradient' />
         </div>
 
         {/* Text Section */}
-        <div className="flex-1 order-2 md:order-1 text-center md:text-left mt-8 md:mt-0">
+        <div className="flex-1 order-2 md:order-1 text-center md:text-left md:pr-10">
           <h1 className={`${styles.heroHeadText} text-white font-Volkhov`}>
             Hi, I'm <span className='text-[#915EFF] font-Orbitron'>Sanket</span>
           </h1>
@@ -34,30 +34,32 @@ const Hero = () => {
           </p>
         </div>
 
-        {/* Right Side Image - Shown on mobile but smaller */}
-        <div className="flex-1 order-1 md:order-2 flex justify-center items-center md:mt-0 mt-[-50px]">
-          <div className="relative w-[280px] h-[280px] md:w-[440px] md:h-[440px]">
-            {/* Blur container with overflow hidden */}
-            <div className="w-full h-full rounded-full overflow-hidden blur-[8px] absolute inset-0 z-0">
+        {/* Image Section - Fixed circular display */}
+        <div className="flex-1 order-1 md:order-2 flex justify-center items-center">
+          <div className="relative" style={{ width: 'min(80vw, 420px)', height: 'min(80vw, 440px)' }}>
+            {/* Blur background */}
+            <div className="w-full h-full overflow-hidden blur-[8px] absolute inset-0 z-0 rounded-full">
               <img
                 src={sanket}
                 alt="Sanket"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
 
             {/* Sharp image */}
-            <img
-              src={sanket}
-              alt="Sanket"
-              className="w-full h-full object-cover rounded-full relative z-10 shadow-lg"
-            />
+            <div className="w-full h-full rounded-full overflow-hidden relative z-10 shadow-lg">
+              <img
+                src={sanket}
+                alt="Sanket"
+                className="w-full h-full object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       {/* Scroll-down indicator */}
-      <div className='absolute xs:bottom-10 bottom-20 md:bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute bottom-10 md:bottom-20 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[30px] h-[54px] md:w-[35px] md:h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-1 md:p-2'>
             <motion.div

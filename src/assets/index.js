@@ -38,7 +38,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import sanket from "./sanket.jpg"
+// import sanket from "./sanket.jpg"
+import sanket from "./sanket.png"
 // import sanket from "./sanketf.jpg"
 
 import digiBallot from "./dibiBallot.png";
