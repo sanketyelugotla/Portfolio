@@ -5,7 +5,7 @@ import { SectionWrapper } from "../hoc";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
-import { navContext } from '../context';
+import { navContext } from '../Context';
 // import { video } from "../assets";
 
 const Videocv = () => {
