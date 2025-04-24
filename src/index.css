@@ -272,7 +272,6 @@
 .resume-section {
   position: relative !important;
   padding-top: 40px !important;
-  padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
 
