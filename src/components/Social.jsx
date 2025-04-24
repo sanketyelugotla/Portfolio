@@ -12,7 +12,7 @@ import { SectionWrapper } from "../hoc";
 
 function Social() {
     return (
-        <div className="w-full flex flex-col items-center justify-center -mt-10">
+        <div className="w-full flex flex-col items-center justify-center py-10">
             <h1 className="text-white text-[40px] font-bold mb-2 font-Volkhov">FIND <span className="text-purple-500">Me</span> ON</h1>
             <p className="text-secondary mb-4 font-Montserrat">
                 Feel free to <span className="text-purple-500">connect</span> with me
@@ -61,4 +61,5 @@ function Social() {
     )
 }
 
-export default SectionWrapper(Social, "");
+// export default SectionWrapper(Social, "");
+export default Social;

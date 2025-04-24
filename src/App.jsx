@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import { Resume, Navbar, Social } from "./components"
+import { Resume, Navbar, Social, Videocv } from "./components"
 import Layout from "./Layout";
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/videoCv" element={<Videocv />} />
         </Routes>
 
         {/* Social media links */}

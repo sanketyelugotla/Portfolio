@@ -15,9 +15,11 @@ import Resume from './Resume';
 import CubeViewer from './CubeViewer';
 import Social from './Social';
 import Github from './Github';
+import Videocv from './Videocv';
 
 export {
   Github,
+  Videocv,
   Social,
   Education,
   CubeViewer,

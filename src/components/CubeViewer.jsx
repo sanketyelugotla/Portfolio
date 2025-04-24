@@ -14,7 +14,7 @@ const CubeViewer = () => {
                 <h2 className={`${styles.sectionHeadText} sm`}>Each <span className='text-[#915EFF]'>Face</span> tells a story.</h2>
             </motion.div>
             <div className="viewer-wrapper">
-                <div class="background-glow"></div>
+                <div className="background-glow"></div>
 
                 <div className="viewer">
                     <input type="radio" name="view" id="front" />
@@ -25,21 +25,21 @@ const CubeViewer = () => {
                     <input type="radio" name="view" id="bottom" />
 
                     <div className="controls">
-                        <label for="front">💻 Developer</label>
-                        <label for="back">🎨 Designer</label>
-                        <label for="right">📚 Learner</label>
-                        <label for="left">🧠 Thinker</label>
-                        <label for="top">🧑‍🤝‍🧑 Team Player</label>
-                        <label for="bottom">🚀 Creator</label>
+                        <label htmlFor="front">💻 Developer</label>
+                        <label htmlFor="back">🎨 Designer</label>
+                        <label htmlFor="right">📚 Learner</label>
+                        <label htmlFor="left">🧠 Thinker</label>
+                        <label htmlFor="top">🧑‍🤝‍🧑 Team Player</label>
+                        <label htmlFor="bottom">🚀 Creator</label>
                     </div>
 
-                    <div class="scene">
+                    <div className="scene">
                         <div className="cube-face front" data-tooltip="Main Product View">
                             💻Developer
                             <span>"I build modern web apps"</span>
                         </div>
 
-                        <div class="cube-face back" data-tooltip="Technical Specifications">
+                        <div className="cube-face back" data-tooltip="Technical Specifications">
                             🎨 Designer
                             <span>"I love clean & intuitive UI"</span>
                         </div>
@@ -66,12 +66,12 @@ const CubeViewer = () => {
                     </div>
 
                     <div className="dot-indicators">
-                        <label for="front"></label>
-                        <label for="back"></label>
-                        <label for="left"></label>
-                        <label for="right"></label>
-                        <label for="top"></label>
-                        <label for="bottom"></label>
+                        <label htmlFor="front"></label>
+                        <label htmlFor="back"></label>
+                        <label htmlFor="left"></label>
+                        <label htmlFor="right"></label>
+                        <label htmlFor="top"></label>
+                        <label htmlFor="bottom"></label>
                     </div>
                 </div>
             </div >

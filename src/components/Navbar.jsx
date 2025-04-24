@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import { navContext } from "../context";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-	const [active, setActive] = useState("");
+	const { active, setActive } = useContext(navContext);
 	const [toggle, setToggle] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 	const [navColour, updateNavbar] = useState(false);
@@ -27,6 +27,10 @@ const Navbar = () => {
 
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
+
+	useEffect(() => {
+		console.log(active)
+	}, [active])
 
 	return (
 		<nav
@@ -75,6 +79,16 @@ const Navbar = () => {
 							onClick={() => setActive("Resume")}
 						>
 							Resume
+						</Link>
+					</li>
+					<li>
+						<Link
+							to="/videocv"
+							className={`${active === "videoCv" ? "text-white" : "text-secondary"
+								} hover:text-white text-[18px] font-medium cursor-pointer`}
+							onClick={() => setActive("videoCv")}
+						>
+							Video CV
 						</Link>
 					</li>
 				</ul>
