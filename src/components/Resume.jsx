@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "./canvas/Particle";
-import pdf from "./resume.pdf";
+import pdf from "../assets/resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+// import "react-pdf/dist/esm/Page/TextLayer.css"; // Add this import
 import { SectionWrapper } from "../hoc";
 
 // Set up the PDF.js worker
@@ -51,11 +52,26 @@ function Resume() {
                                 <Page
                                     pageNumber={1}
                                     scale={width > 768 ? 1.9 : width > 576 ? 0.8 : 0.6}
-                                    renderTextLayer={false}
-                                    renderAnnotationLayer={false}
+                                    renderTextLayer={true}  // Enable text layer
+                                    renderAnnotationLayer={true}  // Enable annotation layer for links
                                 />
                             </Document>
                         </div>
+                    </Col>
+                </Row>
+
+                {/* Bottom Download Button */}
+                <Row className="w-100 justify-content-center">
+                    <Col xs="auto">
+                        <Button
+                            variant="primary"
+                            href={pdf}
+                            target="_blank"
+                            className="download-btn px-4 py-3 d-flex align-items-center justify-content-center rounded-md"
+                        >
+                            <AiOutlineDownload className="inline-block text-[28px] mr-2" />
+                            <span>Download Resume</span>
+                        </Button>
                     </Col>
                 </Row>
             </Container>

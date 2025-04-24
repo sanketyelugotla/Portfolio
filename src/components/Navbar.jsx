@@ -11,7 +11,7 @@ const Navbar = () => {
 	const [scrolled, setScrolled] = useState(false);
 	const [navColour, updateNavbar] = useState(false);
 
-	const navigte = useNavigate();
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -24,21 +24,23 @@ const Navbar = () => {
 		};
 
 		window.addEventListener("scroll", handleScroll);
-
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
-	useEffect(() => {
-		console.log(active)
-	}, [active])
+	// Additional menu items for mobile
+	const mobileMenuItems = [
+		...navLinks,
+		{ id: "resume", title: "Resume" },
+		{ id: "videocv", title: "Video CV" }
+	];
 
 	return (
 		<nav
 			className={`
-				${styles.paddingX} 
-				w-full flex items-center py-2 tracking-wide fixed top-0 z-20 
-				${scrolled ? "bg-primary stickyy" : "bg-transparent"}
-			`}
+        ${styles.paddingX} 
+        w-full flex items-center py-2 tracking-wide fixed top-0 z-20 
+        ${scrolled ? "bg-primary stickyy" : "bg-transparent"}
+      `}
 		>
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
 				<Link
@@ -49,10 +51,8 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					{/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
 					<p className="text-[#915EFF] text-[2.5rem] font-bold cursor-pointer flex font-culpa tracking-wider">
 						Sanket Yelugotla &nbsp;
-						{/* <span className='sm:block hidden font-nico'> | Full Stack Developer</span> */}
 					</p>
 				</Link>
 
@@ -62,11 +62,10 @@ const Navbar = () => {
 							key={nav.id}
 							className={`${active === nav.title ? "text-white" : "text-secondary"
 								} hover:text-white text-[18px] font-medium cursor-pointer`}
-							onClick={
-								() => {
-									setActive(nav.title)
-									navigte("/")
-								}}
+							onClick={() => {
+								setActive(nav.title)
+								navigate("/")
+							}}
 						>
 							<a href={`#${nav.id}`}>{nav.title}</a>
 						</li>
@@ -106,24 +105,35 @@ const Navbar = () => {
 							} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
 					>
 						<ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-							{navLinks.map((nav) => (
+							{mobileMenuItems.map((item) => (
 								<li
-									key={nav.id}
-									className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
+									key={item.id}
+									className={`font-poppins font-medium cursor-pointer text-[16px] ${active === item.title ? "text-white" : "text-secondary"
 										}`}
 									onClick={() => {
 										setToggle(!toggle);
-										setActive(nav.title);
+										setActive(item.title);
+										if (item.id === "resume") {
+											navigate("/resume");
+										} else if (item.id === "videocv") {
+											navigate("/videocv");
+										} else {
+											navigate("/");
+										}
 									}}
 								>
-									<a href={`#${nav.id}`}>{nav.title}</a>
+									{item.id === "resume" || item.id === "videocv" ? (
+										<span>{item.title}</span>
+									) : (
+										<a href={`#${item.id}`}>{item.title}</a>
+									)}
 								</li>
 							))}
 						</ul>
 					</div>
 				</div>
 			</div>
-		</nav >
+		</nav>
 	);
 };
 

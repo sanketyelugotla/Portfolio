@@ -1,5 +1,5 @@
 import { About, Certifications, Contact, Education, Hero, StarsCanvas, Tech, Trainings, Works, CubeViewer, Social, Github } from "./components";
-
+import Particle from "./components/canvas/Particle";
 
 const Layout = () => {
     return (
@@ -10,7 +10,7 @@ const Layout = () => {
                 {/* Pic + name and into */}
                 <Hero />
             </div>
-
+            <Particle />
             {/* Description about me */}
             <About />
 

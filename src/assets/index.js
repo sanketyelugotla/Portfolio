@@ -40,11 +40,8 @@ import tripguide from "./tripguide.png";
 
 // import sanket from "./sanket.jpg"
 import sanket from "./sanket.png"
-<<<<<<< HEAD
 // import video from "./videoResume.mp4"
-=======
 // import sanket from "./sanketf.jpg"
->>>>>>> c8d5ad9c6e2f2d046cd6a4cd4edf6b2f60d8ae14
 
 import digiBallot from "./dibiBallot.png";
 import skyHeights from "./skyHeights.png";

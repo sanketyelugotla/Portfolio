@@ -370,3 +370,32 @@ button:focus {
 .icon-colour {
   color: #700c86 !important;
 }
+
+
+
+
+/* Text layer styling for react-pdf */
+.react-pdf__Page__textContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.react-pdf__Page__textContent span {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  pointer-events: all;
+  transform-origin: 0% 0%;
+}
+
+/* Annotation layer styling */
+.react-pdf__Page__annotations {
+  display: none;
+}
