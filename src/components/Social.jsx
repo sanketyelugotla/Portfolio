@@ -9,6 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
+import { SiLeetcode } from "react-icons/si";
 
 function Social() {
     return (
@@ -27,6 +28,12 @@ function Social() {
                     <AiFillGithub />
                 </a>
                 <a
+                    href="https://leetcode.com/u/sanketyelugotla/"
+                    className="text-white text-3xl hover:text-purple-500 transition"
+                >
+                    <SiLeetcode />
+                </a>
+                <a
                     href="https://www.linkedin.com/in/sanketyelugotla/"
                     target="_blank"
                     rel="noreferrer"
@@ -34,14 +41,14 @@ function Social() {
                 >
                     <FaLinkedinIn />
                 </a>
-                <a
+                {/* <a
                     href="https://www.instagram.com/_only__sanket_/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-white text-3xl hover:text-purple-500 transition"
                 >
                     <AiFillInstagram />
-                </a>
+                </a> */}
                 <a
                     href="https://wa.me/+919550572255"
                     target="_blank"

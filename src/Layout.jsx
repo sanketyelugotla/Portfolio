@@ -40,7 +40,7 @@ const Layout = () => {
             {/* Testimonals */}
             {/* <Feedbacks /> */}
 
-            <Github />
+            {/* <Github /> */}
 
             <div className='relative z-0'>
                 {/* Contact form */}
