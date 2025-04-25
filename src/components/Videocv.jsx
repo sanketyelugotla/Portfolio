@@ -39,7 +39,7 @@ const Videocv = () => {
                         <div className="relative rounded-xl overflow-hidden shadow-2xl bg-black mx-auto"
                             style={{
                                 width: '100%',
-                                maxWidth: '900px',
+                                maxWidth: '1000px',
                                 aspectRatio: '16/9'
                             }}>
                             <iframe
