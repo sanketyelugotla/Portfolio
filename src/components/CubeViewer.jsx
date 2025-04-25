@@ -51,12 +51,12 @@ const CubeViewer = () => {
 
                         <div className="cube-face left" data-tooltip="Feature Highlights">
                             🧠 Thinker
-                            <span> "Collaboration is key"</span>
+                            <span> "Problem-solving mindset"</span>
                         </div>
 
                         <div className="cube-face top" data-tooltip="Top Overview">
                             🧑‍🤝‍🧑 Team Player
-                            <span>"Problem-solving mindset"</span>
+                            <span>"Collaboration is key"</span>
                         </div>
 
                         <div className="cube-face bottom" data-tooltip="Base Details">
