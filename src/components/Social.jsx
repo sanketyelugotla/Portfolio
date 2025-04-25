@@ -24,13 +24,14 @@ function Social() {
                     target="_blank"
                     rel="noreferrer"
                     className="text-white text-3xl hover:text-purple-500 transition"
-                >
+                    >
                     <AiFillGithub />
                 </a>
                 <a
                     href="https://leetcode.com/u/sanketyelugotla/"
+                    target="_blank"
                     className="text-white text-3xl hover:text-purple-500 transition"
-                >
+                    >
                     <SiLeetcode />
                 </a>
                 <a
@@ -46,7 +47,7 @@ function Social() {
                     target="_blank"
                     rel="noreferrer"
                     className="text-white text-3xl hover:text-purple-500 transition"
-                >
+                    >
                     <AiFillInstagram />
                 </a> */}
                 <a
@@ -59,6 +60,7 @@ function Social() {
                 </a>
                 <a
                     href="tel:+919550572255"
+                    target="_blank"
                     className="text-white text-3xl hover:text-purple-500 transition"
                 >
                     <FaPhoneAlt />

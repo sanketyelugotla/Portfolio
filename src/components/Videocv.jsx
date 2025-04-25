@@ -10,7 +10,7 @@ import { navContext } from '../Context';
 
 const Videocv = () => {
     // Replace with your actual video URL (YouTube, Vimeo, or hosted file)
-    const videoUrl = "https://www.youtube.com/embed/Cza7Gi1hrmA?si=GqHEa25lIjMg_zGh&rel=0"; // For YouTube
+    const videoUrl = "https://www.youtube.com/embed/Cza7Gi1hrmA?si=GqHEa25lIjMg_zGh?rel=0"; // For YouTube
     // const videoUrl = "https://player.vimeo.com/video/YOUR_VIDEO_ID"; // For Vimeo
     // const videoUrl = video; // For self-hosted videos
 
